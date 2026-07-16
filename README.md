@@ -2,6 +2,8 @@
 
 This project uses the cleaned student dataset from last week in [cleaned_student_dataset.csv](cleaned_student_dataset.csv) to build a binary classification model that predicts whether a student is more likely to be a Dropout or a Graduate.
 
+The notebook first filters the dataset to remove rows labeled "Enrolled," leaving only the two outcomes required for a strict binary classification task. It then converts the target labels into numeric values and trains a Logistic Regression model. Finally, the notebook evaluates the model on a held-out test set and reports accuracy, precision, recall, and F1-score.
+
 ## What the project does
 - Loads the dataset
 - Removes the Enrolled rows to create a strict binary target
